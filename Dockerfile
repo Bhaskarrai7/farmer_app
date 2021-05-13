@@ -5,14 +5,13 @@ WORKDIR /home/hp/projects/farmers-app
 COPY ./package.json ./
 COPY ./yarn.lock ./
 
-WORKDIR /home/hp/projects/farmers-app/frontend
-
-COPY ./package.json ./
-COPY ./yarn.lock ./
+COPY ./frontend/package.json ./
+COPY ./frontend/yarn.lock ./
 
 
 RUN npm install
-COPY . .
+COPY . .ORKDIR /home/hp/projects/farmers-app/frontend
+
 
 EXPOSE 3000
 Expose 3001
