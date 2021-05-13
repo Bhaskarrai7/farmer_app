@@ -9,8 +9,7 @@ COPY ./frontend/package.json ./
 COPY ./frontend/yarn.lock ./
 
 
-RUN npm install
-RUN npm add express
+RUN npm install -g
 
 COPY . .
 
