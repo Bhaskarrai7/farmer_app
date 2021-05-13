@@ -16,4 +16,5 @@ COPY . .
 
 EXPOSE 3000
 Expose 3001
+CMD ["npm", "install" ,"-g" ,"concurrently"]
 CMD ["npm", "run" , "dev"]
