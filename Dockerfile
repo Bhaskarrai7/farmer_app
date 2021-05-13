@@ -5,7 +5,7 @@ WORKDIR /home/hp/projects/farmers-app
 COPY ./package.json ./
 COPY ./yarn.lock ./
 
-RUN npm install -g
+RUN npm install
 
 COPY . .
 
