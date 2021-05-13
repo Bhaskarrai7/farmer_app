@@ -11,6 +11,8 @@ COPY ./frontend/yarn.lock ./
 
 RUN npm install
 
+COPY . .
+
 
 EXPOSE 3000
 Expose 3001
