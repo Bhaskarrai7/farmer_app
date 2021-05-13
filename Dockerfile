@@ -10,11 +10,12 @@ COPY ./frontend/yarn.lock ./
 
 
 RUN npm install
+RUN npm add express
 
 COPY . .
 
 
 EXPOSE 3000
-Expose 3001
-CMD ["npm", "install" ,"-g" ,"concurrently"]
+EXPOSE 3001
+
 CMD ["npm", "run" , "dev"]
