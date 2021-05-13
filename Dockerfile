@@ -10,7 +10,6 @@ COPY ./frontend/yarn.lock ./
 
 
 RUN npm install
-COPY . .ORKDIR /home/hp/projects/farmers-app/frontend
 
 
 EXPOSE 3000
