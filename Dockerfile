@@ -5,11 +5,11 @@ WORKDIR /home/hp/projects/farmers-app
 COPY ./package.json ./
 COPY ./yarn.lock ./
 
+RUN npm install -g
+
 COPY ./frontend/package.json ./
 COPY ./frontend/yarn.lock ./
 
-
-RUN npm install -g
 
 COPY . .
 
