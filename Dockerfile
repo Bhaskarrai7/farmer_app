@@ -7,10 +7,6 @@ COPY ./yarn.lock ./
 
 RUN npm install -g
 
-COPY ./frontend/package.json ./
-COPY ./frontend/yarn.lock ./
-
-
 COPY . .
 
 
